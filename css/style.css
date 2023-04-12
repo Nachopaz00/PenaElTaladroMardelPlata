@@ -73,7 +73,8 @@
 }
 
 .navbar-brand img {
-  margin-left: 7px;}
+  margin-left: 7px;
+}
 
 
 
@@ -371,12 +372,13 @@ p {
 }
 
 .asociate img {
-  width: 1250px;
+  width: 85vw;
 }
 
 .asociate p {
   margin: 20px;
   padding: 20px;
+
   margin-left: -10px;
 }
 
@@ -452,7 +454,27 @@ p {
   background-color: darkgreen;
 }
 
+
 @media (max-width: 991px) {
+
+
+
+  .contenedor {
+    display: grid;
+    width: 100vw;
+    background-color: darkgreen;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: -0.6fr 2.7fr 2.7fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "encabezado encabezado"
+      "principal principal"
+      "ladoa ladoa"
+      "pie pie";
+  }
+
+
 
   .navbar>.container,
   .navbar>.container-fluid,
@@ -462,59 +484,91 @@ p {
   .navbar>.container-xl,
   .navbar>.container-xxl {
     background-color: white;
+
   }
 
   .navbar-toggler:hover {
     background-color: darkgreen;
-    text-decoration: none;}
-    
-    
+    text-decoration: none;
+  }
+
+
   .navbar-brand img {
     margin-left: 7px;
     border: solid 5px goldenrod;
   }
 
-.contenedor{
-   width: 100vw;
-  background-color: darkgreen;
-}
 
 
-.nota{
-  width: 100vw;
-}
-.ladoa{
-  display: none;
-}
+  .nota {
+    margin: 0;
+    width: 85vw;
+    border: solid 5px white;
+    padding: 5px;
+    margin-top: 5px;
+  }
 
-  .navbar-nav{
+  .ladoa {
+    background-color: darkgreen;
+    /* display: none; */
+  }
+
+  .ladoa .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    /* display: none; */
+  }
+
+  .navbar-nav {
     align-items: center;
   }
 
-  .navbar ul li{
+  .navbar ul li {
     margin: 8px;
   }
 
-  .nota p{
-    font-size: 25px;
+
+
+
+
+  .nota p {
+    margin: auto;
+    font-size: 20px;
     color: white;
 
   }
 
-  .nota h1{
+  .nota h1 {
+    margin: auto;
     color: white;
 
   }
+
+  .nota img {
+
+    /* height: 60vh; */
+    width: 80vw;
+
+  }
+
 
   .principal {
     background-color: darkgreen;
   }
 
-  .principal h1{
-   color: orange;
-  
+  .principal h1 {
+    color: orange;
+
     background-color: darkgreen;
   }
+
+  .principal p {
+    margin: auto;
+    color: white;
+  }
+
   .pie {
     background-color: orange;
 
@@ -524,10 +578,85 @@ p {
     width: 100vw;
   }
 
-  .encabezado{
-    width: 100vw;
+  .encabezado {
+    width: 90vw;
   }
 
+  .resultado {
+    width: 85vw;
+    margin: auto;
+    /* padding: 5px; */
 
+  }
+
+  .posiciones {
+    margin: 0;
+    padding: 0;
+  }
+
+  .posiciones table {
+    width: 85vw;
+    margin: auto;
+    color: darkgreen;
+    text-align: center;
+  }
+
+  .media iframe {
+    width: 85vw;
+    height: 400px;
+  }
+
+  body {
+    background-color: darkgreen;
+  }
+
+  .asociate img {
+    width: 75vw;
+  }
+
+  .asociate p {
+    text-align: justify;
+    margin: 0;
+  }
+
+  .asociate h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nota p {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .ladoa {
+    display: none;
+  }
+
+  .nota h2{
+    font-size: 25px;
+  }
+
+  .nota p {
+    font-size: 12px;
+  }
+
+  .nota img{
+    height: 70vh;
+    width: 75vw;
+  }
+
+.nota {
+  width: 80vw;
+}
+
+.principal h3{
+  font-size: 13px;
+}
 
 }
