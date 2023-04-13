@@ -60,8 +60,9 @@
 .navbar>.container-sm,
 .navbar>.container-xl,
 .navbar>.container-xxl {
+  background-image: linear-gradient(to bottom, darkgreen, lightgreen);
   /* background-image: url(../imagenes/header-fondo.png); */
-  background-color: darkgreen;
+  /* background-color: darkgreen; */
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -83,9 +84,9 @@
   align-content: center;
   display: grid;
   padding-top: 5px;
-  /* background-image: url(../imagenes/footer-fondo.png); */
-  background-color: darkgreen;
-  /* border: solid 1px red; */
+  background-image: linear-gradient(to bottom, lightgreen, darkgreen);
+  /* background-color: darkgreen; */
+
   grid-area: pie;
 }
 
@@ -150,11 +151,13 @@ nav ul li:hover {
 
 /* Agrega la animación */
 nav ul li {
+  
   transition: background-color 0.5s ease;
 }
 
 nav ul li:hover {
   background-color: orange;
+  
 }
 
 
